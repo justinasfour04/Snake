@@ -1,6 +1,6 @@
 'use strict';
 
-import { Point } from './point';
+import Point from './point.js';
 
 export default class Body {
   location: Point;
