@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 
-app.use(express.static(__dirname))
+app.use(express.static(__dirname));
 
 app.get('/', (_, res) => {
   res.sendFile(join(__dirname + '/index.html'));
